@@ -39,6 +39,12 @@ If that does not work, or shows `????? permissions`, then run:
 
 See http://ionicframework.com/getting-started/ for available starter templates
 
+### Ionic Serve
+	$ cd amazeApp
+	$ ionic serve
+Pick the eth0-connection, no localhost. Point your browser to http://localhost:8100/ and you're set.
+
+
 ### Errors
 
 ###### ERROR : No emulator images (avds) found
