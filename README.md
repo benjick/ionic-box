@@ -35,6 +35,14 @@ If that does not work, or shows `????? permissions`, then run:
 	$ ionic start amazeApp sidemenu
 	$ cd amazeApp
 	$ ionic platform add android
-	$ ionic run
+	$ ionic run android
 
 See http://ionicframework.com/getting-started/ for available starter templates
+
+### Errors
+
+###### ERROR : No emulator images (avds) found
+Run `adb-restart` and make sure USB debugging is allowed on your phone
+
+###### Error: ANDROID_HOME is not set and "android" command not in your PATH.
+run `source ~/.bashrc` to load PATHs if this failed
