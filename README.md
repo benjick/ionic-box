@@ -12,10 +12,10 @@ To install, download and install [Vagrant](https://www.vagrantup.com/downloads.h
 
 Once Vagrant and VirtualBox are installed, you can download the latest release of this GitHub repo, and unzip it. `cd` into the unzipped folder and run:
 
-```bash
-$ vagrant up
-$ vagrant ssh
-```
+### Startup
+	$ git clone https://github.com/benjick/ionic-box
+	$ cd ionic-box
+	$ vagrant up
 
 The username for vagrant is `vagrant` and the password is `vagrant`. 
 
@@ -25,24 +25,8 @@ This will download and install the image, and then go through the dependencies a
 
 The image also has support for connected USB Android devices. To test whether devices are connected, you can run (from the box):
 
-```bash
-$ sudo /home/vagrant/android-sdk-linux/platform-tools/adb devices
-```
+	$ adb-devices
 
 If that does not work, or shows `????? permissions`, then run:
 
-```bash
-sudo /home/vagrant/android-sdk-linux/platform-tools/adb kill-server
-sudo /home/vagrant/android-sdk-linux/platform-tools/adb start-server
-```
-
-### Pre-built image
-
-We are testing a pre-built Vagrant cloud image which should be faster than using the Vagrantfile method above. To try it, create a folder where you want to init your dev environment (a great place for this would be in the project folder of your app). Then run:
-
-```bash
-$ vagrant init drifty/ionic-android
-$ vagrant up
-```
-
-If you try this method and it works or you encounter issues, please comment on issue #7.
+	$ adb-restart
