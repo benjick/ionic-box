@@ -11,7 +11,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "ubuntu/trusty32"
-  config.vm.hostname = "ionic-android"
+  config.vm.hostname = "ionic-android-benjick"
 
   config.vm.provision :shell, path: "bootstrap.sh"
 
@@ -29,8 +29,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network :forwarded_port, host: 8100, guest: 8100
   config.vm.network :forwarded_port, host: 35729, guest: 35729
   
-  # Map a fucking folder so I can use Sublime to code
-  config.vm.synced_folder "home", "/home/vagrant", create: true
+  # Map a folder so local editors can be used
+  config.vm.synced_folder "apps/", "/home/vagrant", create: true
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
