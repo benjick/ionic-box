@@ -11,6 +11,7 @@ apt-get install -y nodejs nodejs-legacy npm git openjdk-7-jdk ant expect
 curl -O $ANDROID_SDK
 tar -xzvf $ANDROID_SDK_FILENAME
 sudo chown -R vagrant android-sdk-linux/
+rm $ANDROID_SDK_FILENAME
 
 echo "ANDROID_HOME=~/android-sdk-linux" >> /home/vagrant/.bashrc
 echo "PATH=\$PATH:~/android-sdk-linux/tools:~/android-sdk-linux/platform-tools" >> /home/vagrant/.bashrc
