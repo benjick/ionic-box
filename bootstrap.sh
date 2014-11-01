@@ -17,7 +17,7 @@ echo "PATH=\$PATH:~/android-sdk-linux/tools:~/android-sdk-linux/platform-tools" 
 echo "alias adb-restart='sudo /home/vagrant/android-sdk-linux/platform-tools/adb kill-server; sudo /home/vagrant/android-sdk-linux/platform-tools/adb start-server'" >> /home/vagrant/.bashrc
 echo "alias adb-devices='sudo /home/vagrant/android-sdk-linux/platform-tools/adb devices'" >> /home/vagrant/.bashrc
 echo "alias vagrant='echo You are *on* the vagrant box'" >> /home/vagrant/.bashrc
-source ~/.bashrc
+echo "source /home/vagrant/.bashrc" >> /home/vagrant/.bash_profile
 
 npm install -g cordova
 npm install -g ionic
@@ -33,3 +33,5 @@ expect {
 sudo /home/vagrant/android-sdk-linux/platform-tools/adb kill-server
 sudo /home/vagrant/android-sdk-linux/platform-tools/adb start-server
 sudo /home/vagrant/android-sdk-linux/platform-tools/adb devices
+
+echo "Welcome to ionic-box :)"
