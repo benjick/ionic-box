@@ -30,7 +30,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network :forwarded_port, host: 35729, guest: 35729
   
   # Map a fucking folder so I can use Sublime to code
-  config.vm.synced_folder "home", "/home/vagrant"
+  config.vm.synced_folder "home", "/home/vagrant", create: true
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
