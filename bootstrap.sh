@@ -16,6 +16,7 @@ echo "ANDROID_HOME=~/android-sdk-linux" >> /home/vagrant/.bashrc
 echo "PATH=\$PATH:~/android-sdk-linux/tools:~/android-sdk-linux/platform-tools" >> /home/vagrant/.bashrc
 echo "alias adb-restart='sudo /home/vagrant/android-sdk-linux/platform-tools/adb kill-server; sudo /home/vagrant/android-sdk-linux/platform-tools/adb start-server'" >> /home/vagrant/.bashrc
 echo "alias adb-devices='sudo /home/vagrant/android-sdk-linux/platform-tools/adb devices'" >> /home/vagrant/.bashrc
+echo "alias vagrant='echo You are *on* the vagrant box'" >> /home/vagrant/.bashrc
 source ~/.bashrc
 
 npm install -g cordova
