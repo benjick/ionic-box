@@ -7,7 +7,6 @@ For iOS developers, Ionic Box won't do much for you right now unless you are hav
 
 ### Installation
 
-
 To install, download and install [Vagrant](https://www.vagrantup.com/downloads.html) for your platform, then download and install [VirtualBox](http://virtualbox.org/).
 
 Once Vagrant and VirtualBox are installed, you can download the latest release of this GitHub repo, and unzip it. `cd` into the unzipped folder and run:
@@ -30,3 +29,12 @@ The image also has support for connected USB Android devices. To test whether de
 If that does not work, or shows `????? permissions`, then run:
 
 	$ adb-restart
+
+### Create a project
+	$ vagrant ssh
+	$ ionic start amazeApp sidemenu
+	$ cd amazeApp
+	$ ionic platform add android
+	$ ionic run
+
+See http://ionicframework.com/getting-started/ for available starter templates
