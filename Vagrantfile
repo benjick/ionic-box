@@ -30,7 +30,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network :forwarded_port, host: 35729, guest: 35729
   
   # Map a folder so local editors can be used
-  config.vm.synced_folder "apps/", "/home/vagrant", create: true
+  config.vm.synced_folder "apps/", "/home/vagrant/apps", create: true
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.

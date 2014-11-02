@@ -30,6 +30,7 @@ If that does not work, or shows `????? permissions`, then run:
 
 ### Create a project
 	$ vagrant ssh
+	$ cd apps
 	$ ionic start amazeApp sidemenu
 	$ cd amazeApp
 	$ ionic platform add android
