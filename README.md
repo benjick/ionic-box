@@ -42,12 +42,3 @@ See http://ionicframework.com/getting-started/ for available starter templates
 	$ cd amazeApp
 	$ ionic serve
 Pick the eth0-connection, no localhost. Point your browser to http://localhost:8100/ and you're set.
-
-
-### Errors
-
-###### ERROR : No emulator images (avds) found
-Run `adb-restart` and make sure USB debugging is allowed on your phone
-
-###### Error: ANDROID_HOME is not set and "android" command not in your PATH.
-run `source ~/.bashrc` to load PATHs if this failed
