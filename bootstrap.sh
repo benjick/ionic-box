@@ -5,8 +5,10 @@ ANDROID_SDK=http://dl.google.com/android/$ANDROID_SDK_FILENAME
 
 #sudo apt-get install python-software-properties
 #sudo add-apt-repository ppa:webupd8team/java
-apt-get update
-apt-get install -y nodejs nodejs-legacy npm git openjdk-7-jdk ant expect
+curl -sL https://deb.nodesource.com/setup | sudo bash -
+# ^ runs apt-get update
+apt-get install -y nodejs git openjdk-7-jdk ant expect
+# nodejs-legacy npm ^
 
 curl -O $ANDROID_SDK
 tar -xzvf $ANDROID_SDK_FILENAME
