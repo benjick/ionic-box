@@ -21,6 +21,7 @@ echo "source /home/vagrant/.bashrc" >> /home/vagrant/.bash_profile
 
 npm install -g cordova
 npm install -g ionic
+npm install -g bower
 expect -c '
 set timeout -1   ;
 spawn /home/vagrant/android-sdk-linux/tools/android update sdk -u --all --filter platform-tool,android-19,build-tools-19.1.0
